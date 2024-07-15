@@ -1,0 +1,83 @@
+site_name: Special Economic Zones Act
+site_url: https://www.comsect.in/sez-act/
+site_author: Comsect®
+site_description: The Special Economic Zones Act, 2005
+theme:
+  name: material
+  language: en
+  logo: assets/ashoka-chakra-logo.png
+  favicon: assets/comsect-logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - content.tooltips
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.snippets:
+     auto_append:
+        - includes/abbreviations.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/comsect
+      name: Comsect™ on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/comsect
+      name: Comsect™ on GitHub
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@comsect
+      name: Comsect™ on YouTube
+
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+  - social:
+      cards_layout_options:
+        background_color: "#06038D"
+  - glightbox
+
+nav:
+  - Introduction: index.md
+
+copyright: Copyright &copy 2024 <a href="https://www.github.com/comsect">Comsect<sup>&reg;</sup></a>. All rights reserved. Read the <a href="/license" target="_blank">License</a>.
